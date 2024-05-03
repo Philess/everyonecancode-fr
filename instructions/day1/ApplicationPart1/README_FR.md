@@ -72,7 +72,7 @@ Pour changer la couleur, nous devons ajouter un nouvel attribut à la balise `<b
 2. Dans le terminal, naviguez vers le dossier frontend en tapant la command `cd frontend`
 3. Puis tapez la commande `npm install` pour installer les packages node. Les packages sont le code de d'autres utilisateurs dont l'application dépend.
 4. Démarrez l'application avec la commande `npm run dev`
-5. Cliquez sur le bouton vert **naviguer vers le site** lorsqu'il apparaît pour voir votre site déployé, vous devriez maintenant voir vos modifications
+5. Cliquez sur le bouton vert `naviguer vers le site` lorsqu'il apparaît pour voir votre site déployé, vous devriez maintenant voir vos modifications
 6. Maintenant, essayez de changer la couleur du titre pour une autre couleur de votre choix : la couleur changera automatiquement dans le navigateur sans que vous ayez à rafraîchir la page !
 
 ![Naviguer vers le site de test](./images/browse-test.png)
@@ -83,15 +83,15 @@ Pour changer la couleur, nous devons ajouter un nouvel attribut à la balise `<b
 
 ## Valider & pousser vos modifications
 
-Cliquez sur le signe `+` en haut à droite de votre terminal pour en créer un nouveau. Nous ne voulons pas arrêter notre application, nous utiliserons donc un nouveau terminal pour les prochaines étapes.
+Cliquez sur le signe `+` en haut à droite de votre terminal pour en ouvrir un nouveau. Nous ne voulons pas arrêter notre application, nous utiliserons donc un nouveau terminal pour les prochaines étapes.
 
 ![Créer un nouveau terminal](./images/new-terminal.png)
 
-Après avoir vérifié vos modifications, il est temps de les valider et de les pousser. Tout d'abord, nous voulons vérifier quels fichiers nous avons modifiés. Tapez `git status` dans votre terminal et appuyez sur entrée. Comme nous n'avons fait des modifications que dans notre fichier **Home.vue**, nous pouvons voir qu'il est marqué comme modifié.
+Après avoir vérifié vos modifications, il est temps de les valider et de les sauvegarder (On utilise le terme *pousser* ou *push* en anglais pour signifier que l'on "pousse" les changements au reste de l'équipe). Tout d'abord, nous voulons vérifier quels fichiers nous avons modifiés. Tapez `git status` dans votre terminal et appuyez sur entrée. Comme nous n'avons fait des modifications que dans notre fichier **Home.vue**, nous pouvons voir qu'il est marqué comme modifié.
 
 ![Git status](./images/git-status.png)
 
-Maintenant, exécutez d'abord `git add .` cela ajoutera tous les fichiers modifiés à la zone de staging. Ensuite, exécutez `git commit -m "Mise à jour du titre et de la couleur"` pour valider vos modifications. Le flag `-m` est utilisé pour ajouter un message de commit. Il est important d'ajouter un message de commit significatif, afin que les autres puissent comprendre ce que vous avez changé. Ensuite, exécutez `git push` pour pousser vos modifications sur GitHub.
+Maintenant, exécutez d'abord `git add .` cela sélectionnera tous les fichiers modifiés pour pouvoir être sauvegardé. Ensuite, exécutez `git commit -m "Mise à jour du titre et de la couleur"` pour valider vos modifications. L'option `-m` est utilisé pour ajouter un message explicant les modifications aux autres développeurs. Il est important d'écrire un message clair, afin que les autres développeur puissent comprendre ce que vous avez changé. Ensuite, exécutez `git push` pour pousser vos modifications sur GitHub.
 
 ![Git commit and push](./images/git-commit-push.png)
 
