@@ -71,86 +71,77 @@ Maintenant, observez comment le workflow est exécuté et jetez un œil aux éta
 
 ### Activer GitHub Pages dans les paramètres du projet
 
-Pour pouvoir afficher le site web (frontend) que nous avons construit et déployé en utilisant
-GitHub Actions, nous devons activer GitHub Pages pour votre dépôt. GitHub
-Pages est une manière facile d'afficher un site web statique lié à votre dépôt.
-Beaucoup de gens l'utilisent pour afficher la documentation de leurs projets. Nous l'utiliserons
-pour servir le frontend pour Milligram.
+Pour pouvoir afficher le site Web (frontend) que nous avons construit et déployé en utilisant GitHub Actions, nous devons activer GitHub Pages pour votre dépôt. GitHub Pages est une manière facile d'afficher un site Web (statique) lié à votre dépôt.
+Beaucoup de gens l'utilisent pour afficher la documentation de leurs projets. Nous l'utiliserons pour servir le frontend pour Milligram.
 
-- Allez aux paramètres de votre dépôt-
+- Allez dans l'onglet **Settings** de votre dépôt-
   ![Paramètres du dépôt](./images/RepoSettingsTab.png)
 - Naviguez jusqu'à **Pages**, sélectionnez la branche _gh-pages_ et appuyez sur le bouton de sauvegarde.
   ![Activer Pages](./images/FrontendPagesUpdated.png)
-- Le déploiement prendra 1 à 2 minutes. Après cela, le site web de Milligram est
-  accessible via `https://<votre nom d'utilisateur github>.github.io/everyonecancode/`.
+- Le déploiement prendra 1 à 2 minutes. Après cela, le site web de Milligram est accessible via `https://<votre nom d'utilisateur github>.github.io/everyonecancode/`.
 
-Jetez un œil au site web. Essayez de changer le profil pour votre nom de compte GitHub
-et voyez qu'il est stocké même si vous actualisez le navigateur.
+Jetez un œil au site web. Essayez de changer le profil par votre nom de compte GitHub et voyez qu'il est stocké même si vous actualisez la page.
 
 ### Ouvrez la page GitHub sur votre téléphone
 
-Milligram est une petite application amusante similaire aux médias sociaux basés sur des photos que vous pourriez
-connaître. Bien sûr, nous voulons l'utiliser sur nos téléphones mobiles pour pouvoir utiliser
-les caméras pour prendre des selfies et des photos géniales pour Milligram. Ses principales
-caractéristiques sont :
+Milligram est une petite application amusante similaire aux réseaux sociaux basés sur des photos que vous pourriez connaître. Bien sûr, nous voulons l'utiliser sur nos téléphones mobiles pour pouvoir utiliser
+les caméras pour prendre des selfies et des photos géniales pour Milligram. Ses principales caractéristiques sont :
 
-- Afficher des informations simples de compte GitHub de votre propre profil
-- Prendre des photos et les ajouter au flux d'images
+- Afficher certaines informations de votre compte GitHub sur votre profil
+- Prendre des photos et les ajouter au fil d'actualité d'images
 - Détecter des objets dans les images et créer des descriptions d'images (implémenté le jour 2)
 - Transcrire les phrases que vous prononcez en utilisant Azure Speech Service (implémenté le jour 2)
 
-Votre application est disponible. Mais il n'y a pas de stockage ou de base de données derrière. Donc, elle ne pourra pas stocker de données. Nous installerons cela à l'étape suivante.
+Votre application est disponible. Mais il n'y a pas de stockage ou de base de données derrière. Donc, elle ne pourra pas stocker de données. Nous mettrons cela en place lors de l'étape suivante.
 
-Maintenant, pour faire les premières modifications, ouvrez votre site web personnel Milligram sur votre téléphone et explorez son contenu. Ensuite, modifiez le profil dans l'application pour afficher votre propre photo de profil GitHub dans l'application.
+Maintenant, pour faire les premières modifications, ouvrez votre site web personnel Milligram sur votre téléphone et explorez son contenu. Ensuite, modifiez le profil dans l'application pour afficher votre photo de profil GitHub dans l'application.
 
 ![Ajouter à l'écran d'accueil 1](./images/FrontendHomescreen0.jpg)
 
 ### Ajoutez l'application à votre écran d'accueil
 
-Sur les téléphones mobiles modernes, vous pouvez "installer" des applications web sur votre écran d'accueil pour les rendre
-plus accessibles et leur donner l'apparence d'une application d'un
-appstore officiel. Par conséquent, nous n'ajouterons pas l'application à l'écran d'accueil de nos téléphones.
+Sur les smartphones récents, vous pouvez "installer" des applications web sur votre écran d'accueil pour les rendre plus accessibles et leur donner l'apparence d'une application d'un store officiel (Apple Store / Google Play). Pour se faire:
 
-- Ouvrez le menu du navigateur pour ajouter le site web à votre écran d'accueil.
-  - Voici à quoi cela devrait ressembler sur ios :
+- Ouvrez le menu du navigateur pour ajouter le site Web à votre écran d'accueil.
+  - Voici à quoi cela devrait ressembler sur iOS :
     ![Ajouter à l'écran d'accueil ios](./images/FrontendHomescreen1.jpg)
   - Voici à quoi cela devrait ressembler sur Android :
     ![Ajouter à l'écran d'accueil Android](./images/FrontendHomescreenAndroid.jpg)
-- Maintenant, vous pouvez ouvrir le site web comme une application normale depuis l'écran d'accueil de votre téléphone.
+- Maintenant, vous pouvez ouvrir le site Web comme une application normale depuis l'écran d'accueil de votre téléphone.
 
 ## Backend de l'application Milligram
 
-Le backend de l'application recevra les photos téléchargées, les stockera pour nous et les renverra lorsque nécessaire.
+Le backend de l'application recevra les photos téléchargées, les stockera pour vous et les transmettra au frontend lorsque nécessaire.
 
-Notre application peut être divisée en un frontend (quelque chose que vous voyez et qui s'exécute localement sur votre téléphone) et un backend (quelque chose qui traite vos informations et qui s'exécute sur un serveur). Dans ce cas, comme nous voulons créer notre propre application de médias sociaux, nous avons besoin de photos pour notre "Fil d'actualités". Cela signifie que nous avons besoin d'un endroit pour stocker de nombreux fichiers et d'un endroit pour exécuter notre logique d'application (qui est notre code de programmation).
+Notre application peut être divisée en un frontend (quelque chose que vous voyez et qui s'exécute localement sur votre téléphone) et un backend (quelque chose qui traite vos informations et qui s'exécute sur un serveur). Dans ce cas, comme nous voulons créer notre propre application de réseaux sociaux, nous avons besoin de photos pour notre "Fil d'actualités". Cela signifie que nous avons besoin d'un endroit pour stocker de nombreux fichiers et d'un endroit pour exécuter notre logique d'application (qui est votre code).
 
 Pour stocker les fichiers, nous utiliserons un "Compte de stockage Azure" et pour exécuter notre application, nous utiliserons une "Application web Azure".
-Tout d'abord, connectez-vous à votre "Compte Azure".
+Tout d'abord, connectez-vous à votre Compte Azure.
 
 ### Se connecter à Azure
 
-- Allez sur votre navigateur et visitez [portal.azure.com](https://ms.portal.azure.com/?l=en.en-us#home).
+- Allez sur votre navigateur et visitez [portal.azure.com](https://ms.portal.azure.com).
 
-- Connectez-vous avec `votre compte Azure`. Les informations de connexion vous sont fournies par votre formateur. Demandez-leur si vous ne savez pas où les trouver.
+- Connectez-vous avec `votre compte Azure`. Les informations de connexion vous sont fournies par votre formateur. Demandez-lui si vous ne savez pas où les trouver.
 
 ![Se connecter à Azure](./images/light/LogInAzure.png)
 
 ### Créer un compte de stockage
 
-Notre compte de stockage est l'endroit où nous "sauvegardons" nos photos pour notre fil d'actualités.
-À l'intérieur du compte de stockage, nous utilisons un [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). Le Blob Storage peut contenir une quantité massive de fichiers.
-Tout comme le disque ou le stockage sur votre ordinateur. Un point intéresant est que vous pouvez stocker autant de photos sur le compte de stockage que vous le souhaitez et vous n'avez pas à vous soucier de votre espace de stockage.
+Notre compte de stockage est l'endroit où nous sauvegardons nos photos pour notre fil d'actualités.
+À l'intérieur du compte de stockage, nous utilisons un [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). 
+Tout comme le disque dur de votre ordinateur, le Blob Storage peut contenir une quantité massive de fichiers. Un point intéressant est que vous pouvez stocker autant de photos sur le compte de stockage que vous le souhaitez et vous n'avez pas à vous soucier de votre espace de stockage.
 
 > **Ressource Azure** : Dans Azure, le terme ressource fait référence à une entité gérée par Azure. Par exemple, les machines virtuelles, les réseaux virtuels, et les comptes de stockage sont tous appelés ressources Azure.
 
-> **Groupe de ressources Azure**: Un groupe de ressources est un conteneur qui contient des ressources liées à une solution Azure. Le groupe de ressources peut inclure toutes les ressources > pour la solution, ou seulement celles que vous souhaitez gérer en groupe.
+> **Groupe de ressources Azure**: Un groupe de ressources est un "dossier" qui contient des ressources liées à un projet sur Azure.
 
 - Allez à la page d'accueil du portail Azure.
-- Cliquez sur _+ Créer une ressource_.
-- Recherchez _Storage Account_ et cliquez sur _Create_.
+- Cliquez sur **+ Créer une ressource**.
+- Recherchez **Storage Account** et cliquez sur **Create**.
 - Sélectionnez votre abonnement et le groupe de ressources avec le nom que vous avez utilisé pour vous connecter au portail Azure.
 - Le nom de votre compte de stockage Azure doit être unique à l'échelle mondiale. Il doit également utiliser des petites lettres et aucun caractère spécial.
-- Assurez-vous de sélectionner `Standard` pour _Performance_ et `Locally-redundant storage (LRS)` pour _Redundancy_.
+- Assurez-vous de sélectionner `Standard` pour **Performance** et `Locally-redundant storage (LRS)` pour **Redundancy**.
   ![Storage](./images/light/BackendStorage1.png)
 - Cliquez sur _Review_ puis sur _Create_ pour terminer la création du compte de stockage.
 - Une fois le compte de stockage créé, il devrait y avoir un bouton _Go to resource_. Cliquez dessus.
@@ -164,8 +155,8 @@ C'est l'endroit où toutes les images téléchargées sur notre application Mill
 Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) est un ordinateur géré par Microsoft où vous pouvez facilement exécuter votre propre application sans vous soucier des mises à jour logicielles, des problèmes de sécurité, des sauvegardes ou des problèmes matériels (comme vous avez peut-être déjà expérimenté sur votre téléphone).
 
 - Retournez à la page d'accueil du portail Azure.
-- Cliquez sur _+ Créer une ressource_ comme vous l'avez fait précédemment.
-- Recherchez _Web App_ et cliquez sur _Create_.
+- Cliquez sur **+ Créer une ressource** comme vous l'avez fait précédemment.
+- Recherchez **Web App** et cliquez sur **Create**.
 - Sélectionnez votre abonnement et votre groupe de ressources.
 - Assurez-vous d'ajuster les paramètres selon l'image ci-dessous :
   - Nom : `<choisissez votre propre nom unique>`
@@ -177,10 +168,10 @@ Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) 
 - Créez un nouveau plan de service App et `<choisissez votre propre nom>`.
   ![backend 1](./images/light/BackendApp1.png)
 - Dans le menu déroulant du plan tarifaire, sélectionnez **Free F1** qui est gratuit, sinon vous pourriez être facturé en créant un plan plus grand.
-- Cliquez sur _Review + Create_ en bas de l'écran.
-- Revoyez les informations affichées et cliquez sur _Create_ sur l'écran suivant pour lancer l'application backend.
+- Cliquez sur **Review + Create** en bas de l'écran.
+- Revoyez les informations affichées et cliquez sur **Create** sur l'écran suivant pour lancer l'application backend.
 
-> 📝 Sur la page de révision, vous pouvez trouver des informations sur le coût estimé de votre service. Assurez-vous qu'il affiche _Estimated price - Free_
+> 📝 Sur la page de révision, vous pouvez trouver des informations sur le coût estimé de votre service. Assurez-vous qu'il affiche **Estimated price - Free**"
 
 
 ### Intégrer le stockage et configurer l'application Web
@@ -188,15 +179,17 @@ Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) 
 Maintenant, connectons notre application à notre stockage afin que vous puissiez prendre des photos sur votre téléphone et les stocker. Nous devons indiquer à l'application Web où elle peut trouver notre service de stockage. L'application peut prendre des configurations externes pour configurer la connexion au compte de stockage.
 
 - Pour cela, naviguez à nouveau vers votre _Storage account_. Vous devriez pouvoir le trouver via la barre de recherche en haut soit en recherchant son nom unique, soit simplement en recherchant le compte de stockage.
-- Sous _Access keys_, vous pouvez trouver la _Connection string_ de notre compte de stockage. Cliquez sur le bouton _👀 Show keys_ pour pouvoir copier sa valeur, par exemple, dans un bloc-notes.
+- Sous **Access keys**, vous pouvez trouver la **Connection string** de notre compte de stockage. Cliquez sur le bouton **Show keys** pour pouvoir copier sa valeur, par exemple, dans un bloc-notes.
   ![Capture d'écran de la page Access key dans le portail Azure](./images/light/SecretAccessKeys.png)
 - Revenez à l'application web et ouvrez l'onglet _Configuration_, cliquez sur _New connection string_ et créez une nouvelle chaîne de connexion avec les paramètres suivants :
   | Chaîne de connexion | Type | Valeur |
   |-|-|-|
   | `STORAGE` | Custom | `<collez votre chaîne de connexion (copiée plus tôt) du Storage Account>` |
 - Cliquez sur `ok` et `Save`.
-- Naviguez et descendez jusqu'à l'onglet _CORS_ sur le côté gauche de votre service d'application et entrez `https://<YourGithubHandle>.github.io` sous _Allowed Origins_.
+- Naviguez et descendez jusqu'à l'onglet **CORS** sur le côté gauche de votre service d'application et entrez `https://<YourGithubHandle>.github.io` sous _Allowed Origins_.
 - Cliquez à nouveau sur `Save`.
+
+> CORS (Cross Origin Resource Sharing): Est une mesure de sécurité qui empèche le frontend d'un site web de communiquer avec le backend d'un autre sauf autorisation spéciale.
 
 Maintenant, votre compte de stockage et votre application web sont correctement connectés et peuvent communiquer entre eux.
 
@@ -204,9 +197,9 @@ Maintenant, votre compte de stockage et votre application web sont correctement 
 
 Il manque encore une petite configuration. Notre application utilise un module prêt à l'emploi pour que les utilisateurs puissent interagir avec leur contenu. Mais ce module n'est pas encore installé. Pour qu'il soit installé, nous fournissons à l'application web une configuration qui est exécutée lorsque l'application est lancée, permettant aux utilisateurs d'interagir avec les données de notre application.
 
-- Naviguez vers **_Configuration_** sous _Settings_.
-- Sous l'onglet **_General settings_**, vous devriez trouver les _Stack settings_. Pour notre backend, nous travaillons avec le langage de programmation Python - plus précisément Python 3.8.
-- Derrière **_Startup Command_**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur _Save_.
+- Naviguez vers **Configuration** sous _Settings_.
+- Sous l'onglet **General settings**, vous devriez trouver les **Stack settings**. Pour notre backend, nous travaillons avec le langage de programmation Python - plus précisément Python 3.8.
+- Derrière **Startup Command**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur **Save**.
   ![Comment configurer la commande de démarrage de l'application Web](./images/light/AppServiceStartupCommand.png)
 
 ### Déployer le code backend de Milligram sur Azure Web App via GitHub Actions
