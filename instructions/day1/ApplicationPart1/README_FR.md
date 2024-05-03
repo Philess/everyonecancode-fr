@@ -38,19 +38,23 @@ Vous avez probablement l'habitude de faire les choses sur votre ordinateur en d�
 
 </details>
 
-Revenez dans votre espace de code et tapez dans le terminal :
+Revenez dans votre espace de travail et tapez dans le terminal :
 
     git pull
 
-et ensuite :
+Cette commande permet à *git* de savoir que vous avez créé une nouvelle branche via l'interface de GitHub.
+
+Puis tapez la commande suivante :
 
     git checkout update-title-and-color
+
+Cette commande permet de vous placer sur la branche que vous avez créé.
 
 Cela devrait ressembler à ceci :
 
 ![Pull and checkout](./images/pull-checkout.png)
 
-Félicitations ! Vous venez de créer une nouvelle branche et de passer dessus avec succès. Maintenant, vous pouvez commencer à apporter des modifications à votre code !
+Félicitations ! Vous venez de créer une nouvelle branche et de vous placer dessus avec succès. Maintenant, vous pouvez commencer à apporter des modifications à votre code !
 
 ## Changer le titre et sa couleur de votre application
 
