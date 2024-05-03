@@ -13,7 +13,7 @@
 
 <hr>
 
-# Bienvenue dans notre voyage de codage !
+# Bienvenue dans notre périple de programmation !
 
 C'est génial de vous avoir ici ! 🎉
 
@@ -52,9 +52,6 @@ Voici un aperçu de la semaine de formation. Bon hacking !
 - [Jour 1 - Faites les premiers changements](instructions/day1/ApplicationPart1/README_FR.md)
 - [Jour 1 - Application sur notre téléphone](instructions/day1/ApplicationPart2/README_FR.md)
 - [Jour 1 - Faites des changements avec Github Copilot](instructions/day1/ApplicationPart3/README_FR.md)
-- [Jour 2 - Faites reconnaître des objets dans les images par notre application](instructions/day2/Vision/README_FR.md)
-- [Jour 2 - Faites comprendre la parole à notre application](instructions/day2/Speech/README_FR.md)
-- [Jour 2 - Alimentez notre application avec un chatbot](instructions/day2/Chat/README_FR.md)
 
 ## Objectif du programme *EveryoneCanCode* 
 
