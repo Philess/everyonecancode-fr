@@ -17,17 +17,12 @@
 
 C'est génial de vous avoir ici ! 🎉
 
-Vous avez deux choix passionnants devant vous :
+**Construisez votre propre application de médias sociaux** - Si vous êtes orienté résultats et que vous voulez montrer une application de médias sociaux cool, restez ici dans ce dépôt ! Vous apprendrez comment déployer et configurer votre propre application. C'est une excellente façon de plonger directement dans le monde du développement de logiciels ! **[Cliquez ici pour jeter un coup d'œil à l'application exemple](https://microsoft.github.io/everyonecancode/)**
 
-1. **Construisez votre propre application de médias sociaux** - Si vous êtes orienté résultats et que vous voulez montrer une application de médias sociaux cool, restez ici dans ce dépôt ! Vous apprendrez comment déployer et configurer votre propre application. C'est une excellente façon de plonger directement dans le monde du développement de logiciels ! **[Cliquez ici pour jeter un coup d'œil à l'application exemple](https://microsoft.github.io/everyonecancode/)**
-
-3. **Apprenez à coder en construisant une application de todo** - Si vous êtes orienté détails et que vous voulez commencer votre voyage de codage avec une base solide, sautez sur ce dépôt (anglais uniquement) : [everyoneCanCode-Internal](https://github.com/microsoft/everyoneCanCode-Internal). Vous apprendrez les bases du codage en construisant une application de todo intuitive, mais puissante.
-
-Peu importe le chemin que vous choisissez, nous sommes ravis de faire partie de votre aventure de codage. Commençons ! 🚀
+Nous sommes ravis de faire partie de votre aventure de codage. Commençons ! 🚀
 
 ## Agenda pour l'atelier EveryoneCanCode
 
-### Jour 1
 - Créez votre propre compte GitHub et fusionnez votre première demande d'extraction
 - Utilisez ce dépôt comme notre base
 - Utilisez Azure Web Apps pour héberger votre propre application
@@ -38,13 +33,7 @@ Peu importe le chemin que vous choisissez, nous sommes ravis de faire partie de 
 
 Tous ces services Azure sont utilisés en arrière-plan et peuvent être consommés par notre application, alias application personnelle.
 
-### Jour 2
-- Rendez votre application personnelle existante intelligente avec des modèles de machine learning pré-entraînés. Pour cela, nous nous concentrerons sur nos services gérés comme Azure Cognitive Services : Computer Vision API et Speech API.
-- Connectez votre application avec les services. Cela montre tout le cycle de vie et rassemble le meilleur des deux mondes.
-- Ajoutez un chatbot à l'application en utilisant Azure OpenAI.
-- Les formateurs suggéreront une longue liste de cours en ligne pour commencer et pour approfondir les technologies.
-
-De plus, tous les diplômés de Everyone Can Code sont invités à rejoindre notre [AI Developer College](https://github.com/azuredevcollege/aidevcollege) ou
+Pour information, tous les diplômés de Everyone Can Code sont invités à rejoindre notre [AI Developer College](https://github.com/azuredevcollege/aidevcollege) ou
 [Azure Developer College](https://github.com/azuredevcollege/trainingdays).
 
 <div align="center">
