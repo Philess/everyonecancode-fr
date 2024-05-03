@@ -1,4 +1,4 @@
-# Défi 2 : Faites vos premières modifications de code et fusionnez votre première demande de tirage
+# Défi 2 : Faites vos premières modifications de code et fusionnez votre première Pull Request
 
 ⏲️ _Temps estimé pour terminer : 60 min._ ⏲️
 
@@ -7,10 +7,10 @@
 Aujourd'hui, vous allez apprendre comment :
 
 - Créer une nouvelle branche dans votre projet
-- Comment changer le titre et sa couleur de votre application
-- Tester vos modifications dans votre espace de code
+- Comment changer le titre et sa couleur sur votre application
+- Tester vos modifications dans votre espace de travail
 - Valider & pousser vos modifications
-- Ouvrir une demande de tirage & la fusionner
+- Ouvrir une Pull Request & la fusionner
 
 ## Table des matières
 
@@ -26,13 +26,15 @@ Allez sur votre dépôt sur GitHub. Cliquez sur le menu déroulant "main" et tap
 
 ![Créer une nouvelle branche](./images/create-branch.png)
 
-Tapons quelques commandes git dans le terminal pour créer une nouvelle branche. Pour afficher le terminal, rendez-vous dans le menu 'View>Terminal' ou par le raccourci clavier `Ctrl + ù`.
+> Pour ne pas risquer de déteriorer le fonctionnement du project, les développeurs créent une *branche* afin de travailler sur une copie du projet le temps de finir le code de leur nouvelle fonctionnalité.
+
+Tapons quelques commandes *git* dans le *terminal* pour créer une nouvelle branche. Pour afficher le terminal, rendez-vous dans le menu **View** puis **Terminal** ou par le raccourci clavier `Ctrl + j` ou `Ctrl + ù`.
 ![Terminal](./images/terminal.png)
 
 <details>
 <summary>Qu'est-ce qu'un terminal ?</summary>
 
-Vous avez probablement l'habitude de faire les choses sur votre ordinateur en déplaçant votre souris et en cliquant sur des choses. Il existe en fait une autre manière dont vous pouvez utiliser votre ordinateur : le terminal ! Au lieu de déplacer votre souris, vous pouvez taper une commande dans le terminal et l'ordinateur l'exécutera. Disons que vous voulez aller dans un dossier spécifique sur votre ordinateur - nous avons une commande pour cela, à savoir `cd <chemin-vers-votre-dossier>` (cd signifie change directory). Il existe de nombreuses autres commandes qui peuvent faire beaucoup de choses différentes. Nous appelons l'ensemble de toutes les commandes et de leurs combinaisons le langage de script Shell. Vous pouvez les essayer par vous-même, allez dans le terminal (la petite boîte comme montré sur la photo) et tapez `help` - cela listera toutes les commandes intégrées. N'hésitez pas à jouer avec et à les essayer pour vous familiariser avec l'environnement. Pour quelques commandes communes pratiques, vous pouvez essayer : `pwd` (affiche le chemin de votre répertoire courant, pwd signifie print working directory) et `ls` (liste tous les fichiers dans le dépôt courant)
+Vous avez probablement l'habitude de faire les choses sur votre ordinateur en déplaçant votre souris et en cliquant sur des choses. Il existe en fait une autre manière dont vous pouvez utiliser votre ordinateur : le terminal ! Au lieu de déplacer votre souris, vous pouvez taper une commande dans le terminal et l'ordinateur l'exécutera. Si l'utilisation de la souris est plus intuitive, le terminal permet d'enchainer plusieurs opérations très rapidement ce qui serait plus long manuellement. Disons que vous voulez aller dans un dossier spécifique sur votre ordinateur - nous avons une commande pour cela, à savoir `cd <chemin-vers-votre-dossier>` (cd signifie change directory). Il existe de nombreuses autres commandes qui ont chacune leur utilité. Vous pouvez les essayer par vous-même, allez dans le terminal (la petite boîte comme montré sur la photo) et tapez `help` - cela listera toutes les commandes intégrées. N'hésitez pas à jouer avec et à les essayer pour vous familiariser avec l'environnement. Pour quelques commandes communes pratiques, vous pouvez essayer : `pwd` (affiche le chemin de votre répertoire courant, pwd signifie print working directory) et `ls` (liste tous les fichiers dans le dépôt courant).
 
 </details>
 
