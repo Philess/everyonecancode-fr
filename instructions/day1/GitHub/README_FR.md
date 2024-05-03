@@ -16,7 +16,7 @@ Dans ce défi, vous apprendrez comment:
 1. [Inscrivez-vous et créez un compte GitHub](#inscrivez-vous-et-creez-un-compte-github)
 2. [Modifier votre profil GitHub](#modifier-votre-profil-github)
 3. [Forker un dépôt](#forker-un-depot)
-4. [Créez votre espace de code](#creez-votre-espace-de-code)
+4. [Créez votre espace de travail](#creez-votre-espace-de-travail)
 5. [Défi bonus: Octocat](#defi-bonus-construisez-votre-propre-octocat)
 
 ## Inscrivez-vous et créez un compte GitHub
@@ -65,7 +65,7 @@ Maintenant, allons de l'avant et forkez ce dépôt!
 
 ![Bouton de fork en haut à droite en surbrillance](./images/light/ForkTheRepository.png)
 
-## Créez votre espace de code
+## Créez votre espace de travail
 
 GitHub Codespaces est un environnement de développement basé sur le cloud qui vous permet de coder directement depuis votre navigateur.
 
