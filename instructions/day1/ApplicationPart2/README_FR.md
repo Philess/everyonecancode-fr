@@ -50,7 +50,7 @@ _Appuyer sur la pédale d'accélérateur déclenche une demande du frontend (pé
 
 ### Activer GitHub Actions
 
-Nous avons préparé une manière automatisée de créer et de mettre à jour le site web pour vous. Vous utiliserez deux des fonctionnalités géniales de GitHub. GitHub Pages et GitHub Actions. Commençons par les actions.
+Vous avez préparé une manière automatisée de créer et de mettre à jour le site web pour vous. Vous utiliserez deux des fonctionnalités géniales de GitHub. GitHub Pages et GitHub Actions. Commençons par les actions.
 
 - Allez dans l'onglet **Actions** de votre dépôt
 - Cliquez sur le bouton vert qui dit _I understand my workflows, go ahead and enable them_ pour activer GitHub Actions:
@@ -71,8 +71,8 @@ Maintenant, observez comment le workflow est exécuté et jetez un œil aux éta
 
 ### Activer GitHub Pages dans les paramètres du projet
 
-Pour pouvoir afficher le site Web (frontend) que nous avons construit et déployé en utilisant GitHub Actions, nous devons activer GitHub Pages pour votre dépôt. GitHub Pages est une manière facile d'afficher un site Web (statique) lié à votre dépôt.
-Beaucoup de gens l'utilisent pour afficher la documentation de leurs projets. Nous l'utiliserons pour servir le frontend pour Milligram.
+Pour pouvoir afficher le site Web (frontend) que vous avez construit et déployé en utilisant GitHub Actions, vous devez activer GitHub Pages pour votre dépôt. GitHub Pages est une manière facile d'afficher un site Web (statique) lié à votre dépôt.
+Beaucoup de gens l'utilisent pour afficher la documentation de leurs projets. Vous l'utiliserons pour servir le frontend pour Milligram.
 
 - Allez dans l'onglet **Settings** de votre dépôt-
   ![Paramètres du dépôt](./images/RepoSettingsTab.png)
@@ -84,7 +84,7 @@ Jetez un œil au site web. Essayez de changer le profil par votre nom de compte 
 
 ### Ouvrez la page GitHub sur votre téléphone
 
-Milligram est une petite application amusante similaire aux réseaux sociaux basés sur des photos que vous pourriez connaître. Bien sûr, nous voulons l'utiliser sur nos téléphones mobiles pour pouvoir utiliser
+Milligram est une petite application amusante similaire aux réseaux sociaux basés sur des photos que vous pourriez connaître. Bien sûr, vous voulez l'utiliser sur nos téléphones mobiles pour pouvoir utiliser
 les caméras pour prendre des selfies et des photos géniales pour Milligram. Ses principales caractéristiques sont :
 
 - Afficher certaines informations de votre compte GitHub sur votre profil
@@ -92,7 +92,7 @@ les caméras pour prendre des selfies et des photos géniales pour Milligram. Se
 - Détecter des objets dans les images et créer des descriptions d'images (implémenté le jour 2)
 - Transcrire les phrases que vous prononcez en utilisant Azure Speech Service (implémenté le jour 2)
 
-Votre application est disponible. Mais il n'y a pas de stockage ou de base de données derrière. Donc, elle ne pourra pas stocker de données. Nous mettrons cela en place lors de l'étape suivante.
+Votre application est disponible. Mais il n'y a pas de stockage ou de base de données derrière. Donc, elle ne pourra pas stocker de données. Vous mettrez cela en place lors de l'étape suivante.
 
 Maintenant, pour faire les premières modifications, ouvrez votre site web personnel Milligram sur votre téléphone et explorez son contenu. Ensuite, modifiez le profil dans l'application pour afficher votre photo de profil GitHub dans l'application.
 
@@ -113,9 +113,9 @@ Sur les smartphones récents, vous pouvez "installer" des applications web sur v
 
 Le backend de l'application recevra les photos téléchargées, les stockera pour vous et les transmettra au frontend lorsque nécessaire.
 
-Notre application peut être divisée en un frontend (quelque chose que vous voyez et qui s'exécute localement sur votre téléphone) et un backend (quelque chose qui traite vos informations et qui s'exécute sur un serveur). Dans ce cas, comme nous voulons créer notre propre application de réseaux sociaux, nous avons besoin de photos pour notre "Fil d'actualités". Cela signifie que nous avons besoin d'un endroit pour stocker de nombreux fichiers et d'un endroit pour exécuter notre logique d'application (qui est votre code).
+Notre application peut être divisée en un frontend (quelque chose que vous voyez et qui s'exécute localement sur votre téléphone) et un backend (quelque chose qui traite vos informations et qui s'exécute sur un serveur). Dans ce cas, comme vous voulez créer notre propre application de réseaux sociaux, vous avez besoin de photos pour notre "Fil d'actualités". Cela signifie que vous avez besoin d'un endroit pour stocker de nombreux fichiers et d'un endroit pour exécuter notre logique d'application (qui est votre code).
 
-Pour stocker les fichiers, nous utiliserons un "Compte de stockage Azure" et pour exécuter notre application, nous utiliserons une "Application web Azure".
+Pour stocker les fichiers, vous utiliserez un "Compte de stockage Azure" et pour exécuter notre application, vous utiliserez une "Application web Azure".
 Tout d'abord, connectez-vous à votre Compte Azure.
 
 ### Se connecter à Azure
@@ -128,8 +128,8 @@ Tout d'abord, connectez-vous à votre Compte Azure.
 
 ### Créer un compte de stockage
 
-Notre compte de stockage est l'endroit où nous sauvegardons nos photos pour notre fil d'actualités.
-À l'intérieur du compte de stockage, nous utilisons un [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). 
+Notre compte de stockage est l'endroit où vous sauvegardez nos photos pour notre fil d'actualités.
+À l'intérieur du compte de stockage, vous utiliserez un [Azure Blob Storage](https://learn.microsoft.com/en-us/azure/storage/blobs/). 
 Tout comme le disque dur de votre ordinateur, le Blob Storage peut contenir une quantité massive de fichiers. Un point intéressant est que vous pouvez stocker autant de photos sur le compte de stockage que vous le souhaitez et vous n'avez pas à vous soucier de votre espace de stockage.
 
 > **Ressource Azure** : Dans Azure, le terme ressource fait référence à une entité gérée par Azure. Par exemple, les machines virtuelles, les réseaux virtuels, et les comptes de stockage sont tous appelés ressources Azure.
@@ -176,7 +176,7 @@ Notre [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) 
 
 ### Intégrer le stockage et configurer l'application Web
 
-Maintenant, connectons notre application à notre stockage afin que vous puissiez prendre des photos sur votre téléphone et les stocker. Nous devons indiquer à l'application Web où elle peut trouver notre service de stockage. L'application peut prendre des configurations externes pour configurer la connexion au compte de stockage.
+Maintenant, connectons notre application à notre stockage afin que vous puissiez prendre des photos sur votre téléphone et les stocker. Vous devez indiquer à l'application Web où elle peut trouver notre service de stockage. L'application peut prendre des configurations externes pour configurer la connexion au compte de stockage.
 
 - Pour cela, naviguez à nouveau vers votre _Storage account_. Vous devriez pouvoir le trouver via la barre de recherche en haut soit en recherchant son nom unique, soit simplement en recherchant le compte de stockage.
 - Sous **Access keys**, vous pouvez trouver la **Connection string** de notre compte de stockage. Cliquez sur le bouton **Show keys** pour pouvoir copier sa valeur, par exemple, dans un bloc-notes.
@@ -195,16 +195,16 @@ Maintenant, votre compte de stockage et votre application web sont correctement 
 
 ### Configuration de l'application Web Azure
 
-Il manque encore une petite configuration. Notre application utilise un module prêt à l'emploi pour que les utilisateurs puissent interagir avec leur contenu. Mais ce module n'est pas encore installé. Pour qu'il soit installé, nous fournissons à l'application web une configuration qui est exécutée lorsque l'application est lancée, permettant aux utilisateurs d'interagir avec les données de notre application.
+Il manque encore une petite configuration. Notre application utilise un module prêt à l'emploi pour que les utilisateurs puissent interagir avec leur contenu. Mais ce module n'est pas encore installé. Pour qu'il soit installé, vous fournissez à l'application web une configuration qui est exécutée lorsque l'application est lancée, permettant aux utilisateurs d'interagir avec les données de notre application.
 
 - Naviguez vers **Configuration** sous _Settings_.
-- Sous l'onglet **General settings**, vous devriez trouver les **Stack settings**. Pour notre backend, nous travaillons avec le langage de programmation Python - plus précisément Python 3.8.
+- Sous l'onglet **General settings**, vous devriez trouver les **Stack settings**. Pour notre backend, vous travaillez avec le langage de programmation Python - plus précisément Python 3.8.
 - Derrière **Startup Command**, entrez `gunicorn -k uvicorn.workers.UvicornWorker` et cliquez sur **Save**.
   ![Comment configurer la commande de démarrage de l'application Web](./images/light/AppServiceStartupCommand.png)
 
 ### Déployer le code backend de Milligram sur Azure Web App via GitHub Actions
 
-Pour que notre application de réseaux sociaux puisse réellement faire quelque chose, nous devons amener notre code source sur l'application Web Azure. Pour ce faire, nous automatiserons ce "déploiement". Ainsi, nous n'avons pas à compter sur un processus manuel chaque fois que nous voulons apporter des modifications (par exemple, changer le titre de l'application) à notre application et ainsi, nous évitons de nombreuses erreurs.
+Pour que notre application de réseaux sociaux puisse réellement faire quelque chose, vous devez amener notre code source sur l'application Web Azure. Pour ce faire, vous automatiserez ce "déploiement". Ainsi, vous n'avzez pas à compter sur un processus manuel chaque fois que vous voulez apporter des modifications (par exemple, changer le titre de l'application) à notre application et ainsi, vous évitez de nombreuses erreurs.
 
 - Naviguez vers l'onglet _Deployment Center_ sur le côté gauche de votre application Web dans le portail Azure.
 - Sous l'onglet **Settings**, sélectionnez **GitHub** comme **Source** et cliquez sur **Authorize**.
@@ -231,13 +231,13 @@ Faisons une pause. Pour vous assurer que vous êtes sur la bonne voie, testez si
 
 ### Clarifications, qu'avons-nous fait jusqu'à présent ?
 
-Félicitations, vous venez de déployer le backend de votre application web ! Résumons ce que nous avons fait jusqu'à présent.
+Félicitations, vous venez de déployer le backend de votre application web ! Résumons ce que vous avez fait jusqu'à présent.
 
 D'abord, vous avez déployé le frontend (interface utilisateur) de notre application Web en utilisant les pages github. C'est ce que vous voyez lorsque vous allez sur votre lien de pages GitHub. Le frontend avait besoin d'un serveur pour servir des images et exécuter une certaine logique. C'est là que la partie Azure est intervenue. 
 
 Vous avez créé une ressource de stockage, elle est responsable du stockage de vos images. Ensuite, vous avez créé une ressource d'application Web, ici vous exécuterez votre logique de serveur. La logique du serveur est écrite en Python en utilisant un framework (boite à outil) appelé FastAPI. Le code de la logique du serveur est hébergé dans le dépôt GitHub de everyonecancode. 
 
-Vous avez connecté l'application web au dépôt GitHub et vous avez demandé au serveur d'exécuter une commande spécifique lors du démarrage de l'application web. Cette commande commencera à exécuter notre logique de serveur, c'est pourquoi vous pouvez voir les docs dans votre navigateur sous `/docs`. Ensuite, nous essaierons de connecter le Frontend au Backend.
+Vous avez connecté l'application web au dépôt GitHub et vous avez demandé au serveur d'exécuter une commande spécifique lors du démarrage de l'application web. Cette commande commencera à exécuter notre logique de serveur, c'est pourquoi vous pouvez voir les docs dans votre navigateur sous `/docs`. Ensuite, vous essaierez de connecter le Frontend au Backend.
 
 ### Intégrer l'URL de l'application web Azure dans les secrets de GitHub
 
@@ -265,13 +265,11 @@ Pour que le changement d'ajout du secret prenne effet dans le frontend, vous dev
 
 Cliquez sur le lien frontend affiché sous l'étape de déploiement sous votre pipeline `https://<votreNomGithub>.github.io/...` ou rouvrez l'application sur votre téléphone.
 
-Notre application frontend devrait maintenant avoir un nouveau bouton avec un symbole de caméra qui nous permet de prendre des photos. Ces photos devraient ensuite apparaître sur la chronologie ou le fil d'actualités.
+Votre application frontend devrait maintenant avoir un nouveau bouton avec un symbole de caméra qui vous permet de prendre des photos. Ces photos devraient ensuite apparaître sur la chronologie ou le fil d'actualités.
 
 Alors allez-y et prenez au moins 5 photos et assurez-vous qu'elles apparaissent dans votre application. Assurez-vous de les partager avec au moins 1-2 amis pour qu'ils puissent également télécharger leurs photos sur votre fil d'actualités.
 
 C'est tout pour aujourd'hui. Félicitations ! 🎉
-
-Demain, nous rendrons notre application intelligente en ajoutant de l'intelligence artificielle pour détecter les objets dans vos images ainsi que pour parler à notre application.
 
 ## Vous coincez ? Nous avons ce qu'il vous faut
 
