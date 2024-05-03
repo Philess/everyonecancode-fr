@@ -77,21 +77,27 @@ Après quelques secondes, une nouvelle fenêtre de navigateur s'ouvrira avec vot
 
 ![Installer les extensions recommandées](./images/light/InstallRecommendedExtensions.png)
 
-Un autre onglet dans votre espace de travail s'ouvre et vous devriez voir l'installation des extensions *Azure Functions* et *Python*. Cliquez à nouveau dans l'onglet **Explorer** en haut à gauche pour voir à nouveau la structure des dossiers de notre dépôt.
+Un autre onglet dans votre espace de travail s'ouvre et vous devriez voir l'installation des extensions *Azure Functions* et *Python*. 
 
-> TEst
+> Azure Functions est un service du Cloud Microsoft appelé Azure qui permet d'éxécuter du code sans avoir à se préoccuper de quelle machine le lance. Quand le code s'arrête la machine aussi.
+> Python est un des nombreux langages de programation
+> Les deux extensions permettront de vous aider à mieux intéragir avec le service Azure Functions et le langage Python.
+
+Cliquez à nouveau dans l'onglet **Explorer** en haut à gauche pour voir à nouveau la structure des dossiers de notre dépôt:
 
 ![Onglet Explorer](./images/light/ExplorerTab.png)
 
-Maintenant que vous avez créé et personnalisé avec succès votre compte GitHub, et créé notre espace de code, nous passerons au prochain défi pour aujourd'hui.
+Maintenant que vous avez créé et personnalisé avec succès votre compte GitHub, et créé votre espace de travail, il est temps de commencer votre projet !
 
-Vous ferez ici vos premières modifications de code et fusionnerez votre première demande d'extraction.
+Vous ferez ici vos premières modifications de code que vous appliquerez à travers votre première *Pull Request*.
+
+> Pull Request: Lorsque plusieurs développeurs travaillent sur le même projet il est plus simple que chacun travaille sur sa propre version de code avant de pouvoir les fusionner. Cette demande de fusion se fait à travers une Pull Request
 
 ## Défi bonus: Construisez votre propre Octocat
 
-Octocat est la mascotte officielle de GitHub et le chat le plus mignon, le plus amical et le plus tentaculaire que vous ayez jamais rencontré! Avec sa forme unique de poulpe, Octocat est devenu un symbole bien-aimé de la communauté GitHub, apparaissant dans des produits dérivés, des événements et des médias sociaux.
+Octocat est la mascotte officielle de GitHub et le chat le plus mignon, le plus amical et le plus tentaculaire que vous ayez jamais rencontré ! Avec sa forme unique de poulpe, Octocat est devenu un symbole bien-aimé de la communauté GitHub, apparaissant dans des produits dérivés, des événements et sur les réseaux sociaux.
 
-Comme défi supplémentaire pour ceux qui terminent tôt, nous vous mettons au défi de libérer votre créativité et de concevoir votre propre Octocat en utilisant le constructeur Octocat à [https://myoctocat.com](https://myoctocat.com/). Cet outil vous permet de personnaliser la couleur, la forme et les accessoires de votre Octocat, et de le partager avec les autres.
+Comme défi supplémentaire pour ceux qui terminent tôt, nous vous mettons au défi de libérer votre créativité et de concevoir votre propre Octocat en utilisant le générateur d'Octocat à [https://myoctocat.com](https://myoctocat.com/). Cet outil vous permet de personnaliser la couleur, la forme et les accessoires de votre Octocat, et de le partager avec les autres.
 
 Pensez à votre Octocat comme à votre avatar personnel, votre animal spirituel ou votre alter ego. Donnez-lui une coiffure funky, une tenue cool ou un accessoire excentrique. Faites-le refléter votre personnalité, vos intérêts ou votre sens de l'humour.
 
