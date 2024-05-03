@@ -8,8 +8,8 @@ Aujourd'hui, vous allez apprendre comment :
 
 - Commencer avec GitHub Actions
 - Déployer le frontend de Milligram sur GitHub Pages
-- Créer une application web Python sur Azure
-- Déployer le backend de Milligram sur Azure avec GitHub Actions
+- Créer une application Web Python sur Azure
+- Déployer le *backend* de Milligram sur Azure avec GitHub Actions
 
 ## Table des matières
 
@@ -34,17 +34,17 @@ Aujourd'hui, vous allez apprendre comment :
 
 ## Frontend de l'application Milligram
 
-Tout d'abord, commençons par l'application frontend - La partie que vous verrez et utiliserez sur votre téléphone mobile ou votre navigateur web. C'est le principal moyen d'interagir avec les services de Milligram.
+Tout d'abord, commençons par l'application frontend - La partie que vous verrez et utiliserez sur votre téléphone mobile ou votre navigateur Web. C'est le principal moyen d'interagir avec les services de Milligram.
 
 <details>
 <summary>Que signifie frontend ?</summary>
 
 Imaginons une simple voiture. Tout ce que vous voyez - les sièges, le toit, le sol, l'interface utilisateur (tableau de bord, volant, etc.) - c'est tout le **frontend**.
-Puis vous ouvrez le capot : et là il est ! Le **backend** et l'**API**. Vous pouvez voir le moteur, la transmission et quelques autres éléments.
+Puis en ouvrant le capot vous aurez accès aux éléments restant: Le **backend** et l'**API** (le moteur, la transmission etc...)
 
-Mais comment comprendre cet exemple maintenant... assez simple. Le **frontend** est ce que l'utilisateur utilise pour donner des instructions au **backend** via une **API**. Donc, lorsque vous appuyez sur la pédale d'accélérateur, le moteur accélère.
+Le **frontend** est ce que l'utilisateur utilise pour donner des instructions au **backend** via une **API**. Dans notre exemple, lorsque vous appuyez sur la pédale d'accélérateur, le moteur accélère.
 
-_Appuyer sur la pédale d'accélérateur déclenche une demande dans le frontend à l'API dans le backend pour que le moteur accélère, et la partie requise du backend (dans ce cas, le moteur) l'exécute._
+_Appuyer sur la pédale d'accélérateur déclenche une demande du frontend (pédale) au backend (moteur) via l'API (la transmission) pour que le moteur accélère_
 
 </details>
 
@@ -52,14 +52,12 @@ _Appuyer sur la pédale d'accélérateur déclenche une demande dans le frontend
 
 Nous avons préparé une manière automatisée de créer et de mettre à jour le site web pour vous. Vous utiliserez deux des fonctionnalités géniales de GitHub. GitHub Pages et GitHub Actions. Commençons par les actions.
 
-- Allez aux **Actions** de votre dépôt
-- Cliquez sur le bouton qui dit _I understand my workflows, go ahead and enable them_ pour activer GitHub Actions
-
-_Un [dépôt](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-repositories) contient tous les fichiers de votre projet et l'historique des révisions de chaque fichier. Vous pouvez discuter et gérer le travail de votre projet au sein du dépôt._
+- Allez dans l'onglet **Actions** de votre dépôt
+- Cliquez sur le bouton vert qui dit _I understand my workflows, go ahead and enable them_ pour activer GitHub Actions:
 
 ![Activer GitHub Actions](./images/EnableGithubActions.png)
 
-Assurez-vous que les Actions ont des permissions de lecture/écriture. Vérifiez cela via Paramètres->Actions->Général et descendez jusqu'à la section _Workflow Permissions_. Cliquez sur l'option _Read and write permissions_. Cliquez sur _Save_.
+Assurez-vous que les Actions ont des permissions de lecture/écriture. Vérifiez cela via **Paramètres** -> **Actions** -> **Général** et descendez jusqu'à la section **Workflow Permissions**. Cliquez sur l'option **Read and write permissions**. Cliquez sur **Save**.
 ![Vérifier les paramètres](./images/gh-actions-read.png)
 
 ### Exécuter GitHub Actions
