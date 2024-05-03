@@ -77,7 +77,9 @@ Après quelques secondes, une nouvelle fenêtre de navigateur s'ouvrira avec vot
 
 ![Installer les extensions recommandées](./images/light/InstallRecommendedExtensions.png)
 
-Un autre onglet dans notre espace de code s'ouvre et il installe les extensions pour Azure Functions et Python. Cliquez à nouveau dans l'onglet **Explorer** en haut à gauche pour voir à nouveau la structure des dossiers de notre dépôt.
+Un autre onglet dans votre espace de travail s'ouvre et vous devriez voir l'installation des extensions *Azure Functions* et *Python*. Cliquez à nouveau dans l'onglet **Explorer** en haut à gauche pour voir à nouveau la structure des dossiers de notre dépôt.
+
+> TEst
 
 ![Onglet Explorer](./images/light/ExplorerTab.png)
 
