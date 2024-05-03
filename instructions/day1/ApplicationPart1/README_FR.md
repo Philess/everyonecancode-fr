@@ -16,7 +16,7 @@ Aujourd'hui, vous allez apprendre comment :
 
 1. [Créer une nouvelle branche dans votre projet](#créer-une-nouvelle-branche-dans-votre-projet)
 2. [Changer le titre et sa couleur de votre application](#changer-le-titre-et-sa-couleur-de-votre-application)
-3. [Tester vos modifications dans votre espace de code](#tester-vos-modifications-dans-votre-espace-de-code)
+3. [Tester vos modifications dans votre espace de travail](#tester-vos-modifications-dans-votre-espace-de-travail)
 4. [Valider & pousser vos modifications](#valider--pousser-vos-modifications)
 5. [Ouvrir une demande de tirage et la fusionner](#ouvrir-une-demande-de-tirage-et-la-fusionner)
 
@@ -58,7 +58,7 @@ Félicitations ! Vous venez de créer une nouvelle branche et de vous placer des
 
 ## Changer le titre et sa couleur de votre application
 
-Ouvrez le fichier `Home.vue` du dossier `frontend/src/views`. En haut, vous trouverez un soi-disant `<template>` qui décrit la structure de base de la vue d'accueil. Pour changer le titre de votre application de Milligram comme vous le souhaitez, vous devez changer le texte entre les balises `<b-navbar-item>`.
+Ouvrez le fichier `Home.vue` du dossier `frontend/src/views`. En haut, vous trouverez un élément appelé `<template>` qui décrit la structure de base de la page d'accueil. Vous pouvez changer le titre de l'application comme vous le souhaitez en changeant le texte entre les balises `<b-navbar-item>`.
 
 ![Changer le titre](./images/juliagram.png)
 
@@ -66,13 +66,13 @@ Pour changer la couleur, nous devons ajouter un nouvel attribut à la balise `<b
 
 ![Changer la couleur du titre](./images/style-tag.png)
 
-## Tester vos modifications dans votre espace de code
+## Tester vos modifications dans votre espace de travail
 
 1. Installez les extensions recommandées lorsqu'elles sont proposées.
-2. Dans le terminal, naviguez vers le dossier frontend avec `cd frontend`
-3. Exécutez `npm install` pour installer les packages node.
-4. Construisez l'application avec cette commande - `npm run dev`
-5. Cliquez sur _naviguer vers le site_ lorsqu'il apparaît pour voir le site de test déployé, vous devriez maintenant voir vos modifications
+2. Dans le terminal, naviguez vers le dossier frontend en tapant la command `cd frontend`
+3. Puis tapez la commande `npm install` pour installer les packages node. Les packages sont le code de d'autres utilisateurs dont l'application dépend.
+4. Démarrez l'application avec la commande `npm run dev`
+5. Cliquez sur le bouton vert **naviguer vers le site** lorsqu'il apparaît pour voir votre site déployé, vous devriez maintenant voir vos modifications
 6. Maintenant, essayez de changer la couleur du titre pour une autre couleur de votre choix : la couleur changera automatiquement dans le navigateur sans que vous ayez à rafraîchir la page !
 
 ![Naviguer vers le site de test](./images/browse-test.png)
