@@ -74,5 +74,6 @@ Ce projet a adopté le [Code de conduite open source de Microsoft](https://opens
 Pour plus d'informations, consultez la [FAQ sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou
 contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou commentaire supplémentaire.
 
+
 [![Licence Creative Commons](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)  
 Ce travail est sous licence [Licence Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/).
