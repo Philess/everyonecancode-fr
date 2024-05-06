@@ -6,7 +6,7 @@
 
 Dans ce défi, vous apprendrez comment:
 
-- Créer un service API de parole dans Azure
+- Créer un service API de type Speech API dans Azure
 - Connectez votre service API de parole avec votre application
 - Transmettez la clé API à votre application à l'aide des secrets GitHub
 - Comment parler à notre application
