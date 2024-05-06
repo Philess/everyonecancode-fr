@@ -186,9 +186,7 @@ Our [Azure Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/) is
 - Click _Review + Create_ at the bottom of the screen.
 - Review the displayed information and click _Create_ on the next screen to spin up the backend application.
 
-:::tip
 📝 On the review page, you can find information about the estimated costs of your service. Make sure it displays _Estimated price - Free_
-:::
 
 ### Integrate storage and configure Web App
 
