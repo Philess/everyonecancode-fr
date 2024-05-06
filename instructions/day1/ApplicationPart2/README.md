@@ -198,7 +198,7 @@ Now let's connect our application with our storage so that you can take pictures
 - Under _Access keys_ you can find the _Connection string_ from our storage account. Hit the _👀 Show keys_ button so are able to copy it's value to e.g. a notepad.
   ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
 - Navigate back to the web app and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
-  | Connection string | Type | Value |
+  | Connection string | Value |
   |-|-|
   | `STORAGE` | `<paste your (earlier copied) connection string from Storage Account>` |
 - Hit `ok` and `Save`.
