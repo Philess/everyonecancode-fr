@@ -199,8 +199,8 @@ Now let's connect our application with our storage so that you can take pictures
   ![Screenshot of Access key page in Azure portal](./images/light/SecretAccessKeys.png)
 - Navigate back to the web app and open the _Configuration_ tab, click _New connection string_ and create a new connection string with the following settings:
   | Connection string | Type | Value |
-  |-|-|-|
-  | `STORAGE` | Custom | `<paste your (earlier copied) connection string from Storage Account>` |
+  |-|-|
+  | `STORAGE` | `<paste your (earlier copied) connection string from Storage Account>` |
 - Hit `ok` and `Save`.
 - Navigate and scroll down to the _CORS_ tab on the left hand side of your app service and enter `https://<YourGithubHandle>.github.io` under _Allowed Origins_.
 - Hit `Save` again.
