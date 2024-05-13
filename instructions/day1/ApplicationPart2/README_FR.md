@@ -78,7 +78,7 @@ Beaucoup de gens l'utilisent pour afficher la documentation de leurs projets. Vo
   ![Paramètres du dépôt](./images/RepoSettingsTab.png)
 - Naviguez jusqu'à **Pages**, sélectionnez la branche _gh-pages_ et appuyez sur le bouton de sauvegarde.
   ![Activer Pages](./images/FrontendPagesUpdated.png)
-- Le déploiement prendra 1 à 2 minutes. Après cela, le site web de Milligram est accessible via `https://<votre nom d'utilisateur github>.github.io/everyonecancode/`.
+- Le déploiement prendra 1 à 2 minutes. Après cela, le site web de Milligram est accessible via `https://<votre nom d'utilisateur github>.github.io/everyonecancode-fr/`.
 
 Jetez un œil au site web. Essayez de changer le profil par votre nom de compte GitHub et voyez qu'il est stocké même si vous actualisez la page.
 
