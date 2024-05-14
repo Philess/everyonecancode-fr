@@ -6,7 +6,7 @@
         <div id="right"></div>
         <div id="top"></div>
         <div id="bottom"></div>
-        <b-navbar-item id="fontnavbar" class="title is-2" style="color: blue">
+        <b-navbar-item id="fontnavbar" class="title is-2" style="color: green">
           Milligram changed my life
         </b-navbar-item>
       </template>
